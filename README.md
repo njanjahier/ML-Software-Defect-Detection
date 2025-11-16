@@ -50,6 +50,14 @@ The project is structured into clear logical steps:
 
 You can run the notebook end-to-end or reuse the model-training sections in new datasets.
 
+🚧 Known Issues / Limitations
+The model is trained on a single, domain-specific dataset, which may limit its ability to generalize to other software projects or datasets.
+Hyperparameters are not fully optimized, meaning model performance may be improved with systematic tuning (e.g., Grid Search, Random Search, Bayesian Optimization).
+The dataset is relatively small, which can lead to variability in performance metrics and potential overfitting on limited samples.
+The current implementation does not include cross-project validation, so its robustness across different codebases remains untested.
+The workflow does not yet implement automated testing or CI integration, which would improve reproducibility and reliability in larger deployments.
+Feature engineering is minimal; additional feature creation or domain-specific metrics may significantly improve model performance.
+
 📅 Roadmap
 Future improvements may include:
 -Adding additional ML models (XGBoost, LightGBM)
@@ -60,6 +68,7 @@ Future improvements may include:
 
 📜 License
 This project is released under the MIT License.
+
 
 
 
