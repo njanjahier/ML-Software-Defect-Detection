@@ -1,42 +1,66 @@
-Diplomski rad – Primjena mašinskog učenja u otkrivanju defekata softvera
+📘 ML Software Defect Detection
+A Machine Learning project for predicting software defects using classical ML models and feature-based analysis.
 
-Ovo je praktični dio mog diplomskog rada. Projekat koristi Naivni Bajesov klasifikator da bi, na osnovu NASA CM1 dataseta, predvidio da li softverski modul sadrži defekt ili ne.
+🚀 Overview
+Software systems often contain hidden defects that can significantly increase maintenance costs and reduce product reliability.
+This project builds and evaluates supervised machine learning models that predict whether a software module is defective or clean based on historical metrics.
+The goal of this project is to provide an automated, data-driven approach for early defect identification, helping QA teams and software engineers prioritize testing efforts and improve software quality.
 
-Opis projekta  
-Učitavanje podataka iz cm1.csv  
-Pretvaranje oznaka “defekt” / “nema defekta” u numeričke vrijednosti  
-Podjela podataka na trening i test skup  
-Treniranje Naive Bayes modela  
-Prikaz rezultata kroz maticu konfuzije i izvještaj o klasifikaciji  
-Crtanje grafikona matrice konfuzije radi vizualizacije
+✨ Key Features
+Data preprocessing and feature normalization
+Exploratory data analysis (EDA) with visualizations
+Training multiple ML classifiers (Logistic Regression, Random Forest, etc.)
+Model evaluation using accuracy, precision, recall, F1-score
+Feature importance visualization
+Confusion matrix and performance plots
 
-Korištene biblioteke:
--pandas, 
--scikit-learn,  
--matplotlib, 
--seaborn. 
+🛠️ Tech Stack
+Python
+Pandas, NumPy
+Scikit-learn
+Matplotlib, Seaborn
+Jupyter Notebook
 
-Pokretanje u Google Colab-u  
-1. Otvoriti Google Colab (https://colab.research.google.com/)  
-2. Napraviti novi notebook ili otvoriti postojeći (npr. `01_ML_Defect_Detection_NASA_CM1.ipynb`)  
-3. Učitati dataset cm1.csv (u Colab-u koristeći Upload opciju ili Google Drive)  
-4. Instalirati biblioteke komandom:  
-   `!pip install pandas scikit-learn matplotlib seaborn`  
-5. Pokrenuti sve ćelije koda
+📊 Results & Metrics
+The final trained model achieved:
+![Feature Importance & Confusion Matrix](results/feature_importance_and_confusion_matrix.png)
 
-Na izlazu se dobija:
--Matrica konfuzije i izvještaj o performansama (preciznost, odziv, F1-score)  
--Grafički prikaz matrice konfuzije
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/njanjahier/ML-Software-Defect-Detection.git
+cd ML-Software-Defect-Detection
 
-Struktura projekta  
-*01_ML_Defect_Detection_NASA_CM1.ipynb` – glavni notebook sa kodom  
-*requirements.txt` – lista biblioteka (za lokalno pokretanje)  
-*README.md` – opis projekta  
-*cm1.csv` – dataset (nije uključen zbog autorskih prava)
+2. Install dependencies
+Make sure you have Python 3.8+ installed.
+pip install -r requirements.txt
 
-Napomena  
-Projekat je urađen za diplomski rad na temu “Primjena tehnika mašinskog učenja u otkrivanju defekata softvera”. Testiran je u Google Colab okruženju, ali se može pokretati i lokalno ako instaliraš biblioteke iz `requirements.txt`.
+3. Run the Jupyter Notebook
+jupyter notebook
 
-Autor: Sanja Savić  
-Godina: 2025
+Open:
+ML_Software_Defect_Detection.ipynb
+
+🧪 How to Use
+The project is structured into clear logical steps:
+1.Load & preprocess dataset
+2.Perform EDA and visualize distributions
+3.Train ML models
+4.Evaluate performance
+5.Analyze feature importance
+
+You can run the notebook end-to-end or reuse the model-training sections in new datasets.
+
+📅 Roadmap
+Future improvements may include:
+-Adding additional ML models (XGBoost, LightGBM)
+-Hyperparameter tuning
+-Deploying the model as a REST API
+-Automated testing and CI integration
+-Cross-project generalization study.
+
+📜 License
+This project is released under the MIT License.
+
+
+
 
